@@ -23,8 +23,9 @@ export class RegisterComponent implements OnInit {
       this.toastr.success('user created');
       this.cancel();
     }, error =>{
+      debugger;
       console.log(error);
-      this.toastr.error(error.error);
+      this.toastr.error(error);
     })
   }
 
