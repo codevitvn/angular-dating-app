@@ -7,4 +7,4 @@ Users should be able to privately message other users
 
 #Tech stack
 asp.net core api (.net5)
-Angular
+Angular 12.0.3
