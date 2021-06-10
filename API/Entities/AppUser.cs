@@ -11,7 +11,7 @@ namespace API.Entities
         public byte[] PasswordHash {get; set; }
         public byte[] PasswordSalt {get; set; }
         public DateTime DateOfBith { get; set; }
-        public string KnowAs { get; set; }
+        public string KnownAs { get; set; }
         public DateTime Created { get; set; }
         public DateTime LastAvtive { get; set; }
         public string Gender { get; set; }

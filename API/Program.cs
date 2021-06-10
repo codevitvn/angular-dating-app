@@ -24,7 +24,7 @@ namespace API
             {
                 var context = services.GetService<DataContext>();
                 await context.Database.MigrateAsync(); // khoong caan chay dotnet ef database update
-                // await Seed.SeedUserṣ̣̣̣̣̣(context);
+                await Seed.SeedUserṣ̣̣̣̣̣(context);
             }
             catch (Exception ex)
             {

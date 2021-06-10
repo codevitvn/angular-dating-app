@@ -32,7 +32,6 @@ namespace API.Data
 
         public async Task<AppUser> GetUserAsync(int id)
         {
-            await Seed.SeedUserṣ̣̣̣̣̣(_context);
             return await _context.Users.FindAsync(id);
         }
 
