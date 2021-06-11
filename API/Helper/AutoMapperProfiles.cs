@@ -17,6 +17,7 @@ namespace API.Helper
                             opt => opt.MapFrom(src => src.DateOfBith.CalculateAge()));                            
             CreateMap<Photo, PhotoDto>();
             CreateMap<MemberUpdateDto, AppUser>();
+            CreateMap<RegisterDto, AppUser>();
         }
     }
 }
