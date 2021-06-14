@@ -2,7 +2,7 @@ import { Photo } from "./photo";
 
 export interface Member {
     username: string;
-    ender: string;
+    gender: string;
     photoUrl: string;
     age: number;
     knownAs: string;
