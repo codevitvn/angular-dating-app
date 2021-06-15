@@ -9,11 +9,11 @@ namespace API.Interfaces
     public interface IUserRepository
     {
         void Update(AppUser user); // just update tracking data, not interact with persistent database
-        Task<bool> SaveAllAsync();
-
         Task<AppUser> GetUserAsync(int id);
         Task<AppUser> GetUserAsync(string username);
         Task<MemberDto> GetMemberAsync(string username);
         Task<PagedList<MemberDto>> GetMembersAsync(UserParams userParams);
+
+        Task<string> GetUserGender(string username);
     }
 }
