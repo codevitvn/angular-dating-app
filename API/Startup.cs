@@ -50,6 +50,7 @@ namespace API
 
             services.AddIdentityServices(_config);
             services.AddSignalR();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -68,12 +69,16 @@ namespace API
 
             app.UseAuthentication();
             app.UseAuthorization();
+            
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
                 endpoints.MapHub<PresenceHub>("hubs/presence");
                 endpoints.MapHub<MessageHub>("hubs/message");
+                endpoints.MapFallbackToController("Index", "Fallback");
             });
         }
     }
