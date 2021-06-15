@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Data;
+using API.Entities;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,8 +25,10 @@ namespace API
             try
             {
                 var context = services.GetService<DataContext>();
+                var userManager = services.GetService<UserManager<AppUser>>();
+                var roleManager = services.GetService<RoleManager<AppRole>>();
                 await context.Database.MigrateAsync(); // khoong caan chay dotnet ef database update
-                await Seed.SeedUserṣ̣̣̣̣̣(context);
+                await Seed.SeedUserṣ̣̣̣̣̣(userManager, roleManager);
             }
             catch (Exception ex)
             {
