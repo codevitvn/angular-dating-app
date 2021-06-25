@@ -1,3 +1,7 @@
+#Dating app
+[User stories](https://github.com/huy-ngoduc/DatingApp/wiki)
+
+[Basic design](https://github.com/huy-ngoduc/DatingApp/wiki/Basic-design)
 
 ## How to run
 1. `npm install`
