@@ -11,7 +11,16 @@
 
 3. Go to `API` folder
 4. Update the `connectionString` in the `appsettings.json`
-5. Run: `dotnet run`
-6. Go to `http://localhost:5000/` and enjoy
+5. Register Cloudinary account
+6. Insert Cloudinary configuration section
+
+`"CloudinarySettings": {
+    "CloudName": "",
+    "ApiKey": "",
+    "ApiSecret": ""
+  }`
+  
+8. Run: `dotnet run`
+9. Go to `http://localhost:5000/` and enjoy
 
 
