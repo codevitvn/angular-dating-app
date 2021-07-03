@@ -6,8 +6,8 @@
 
 ## How to run
 1. `npm install`
-2. Go to `client` foler and run: `npm build`
-`npm build` will compile then copy the compiled client app into `API\wwwroot`
+2. Go to `client` foler and run: `npm run build`
+`npm run build` will compile then copy the compiled client app into `API\wwwroot`
 
 3. Go to `API` folder
 4. Update the `connectionString` in the `appsettings.json`
